@@ -15,15 +15,9 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('latitude');
-            $table->string('longitude');
-            $table->string('street');
-            $table->string('ext_number');
-            $table->string('neighborghood');
-            $table->string('zip_code');
-            $table->string('state');
-            $table->string('city');
-            $table->string('country');
+            $table->string('name');
+            $table->string('address');
+            $table->boolean('is_airport')->default(false);
             $table->timestamps();
         });
     }

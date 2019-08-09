@@ -15,10 +15,9 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('branch_id')->unsigned();
             $table->string('name');
-            $table->double('price');
-            $table->integer('is_active')->default(0);
+            $table->date('disabled_from')->nullable();
+            $table->date('disabled_to')->nullable();
             $table->timestamps();
         });
     }
