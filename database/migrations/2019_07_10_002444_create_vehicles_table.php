@@ -15,12 +15,12 @@ class CreateVehiclesTable extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
             $table->integer('category_id')->unsigned();
-            $table->integer('brand_id')->unsigned();
-            $table->string('year');
             $table->string('model');
             $table->string('color');
-            $table->boolean('is_available')->default(false);
+            $table->double('price');
+            $table->string('image_url');
             $table->timestamps();
         });
     }

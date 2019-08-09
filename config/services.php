@@ -44,4 +44,10 @@ return [
         ],
     ],
 
+    'mercadopago' => [
+	    'CLIENT_ID'=>env('MP_APP_ID', ''),
+	    'CLIENT_SECRET'=>env('g3o1n9D3ndjPOqaQyTWy9GW0VdMhj97l', ''),
+	    'SANDBOXMODE'=>env('MERCADOPAGO_MP_SANDBOXMODE', ''),
+	],
+
 ];

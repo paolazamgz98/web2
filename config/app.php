@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        LivePixel\MercadoPago\Providers\MercadoPagoServiceProvider::class,
+
 
     ],
 
@@ -225,6 +227,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'MP' => CodemanCompany\LaravelMercadoPago\Facades\MP::class,
+        'MP' => LivePixel\MercadoPago\Facades\MP::class,
+
+
 
     ],
 
